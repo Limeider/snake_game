@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS";
+}
+
+main,
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header,
+footer {
+    background-color: black;
+}
+
+header {
+    height: 7.5vh;
+}
+
+header>h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+footer>h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+main {
+    height: 87.5vh;
+}
+
+#snake-game {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+
+.start-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.start-div>h3 {
+    font-size: 1.90rem;
+}
+
+.start-div>button {
+    width: 17.5rem;
+    height: 3rem;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+}
+
+#start {
+    background-color: green;
+}
+
+#restart {
+    background-color: green;
+}
+
+#quit {
+    background-color: red;
+}
+
+#canvas {
+    margin-top: 1rem;
+    border: 2px solid black;
+}
+
+footer {
+    height: 5vh;
+
+}
+
+.hidden {
+    display: none;
+}
